@@ -54,7 +54,9 @@ model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
   
-
+The equations of a line is y=mx+b. 
+The fit equation is SIMS=0.054563*ARM-4.0951560
+  
 #### Predict at target point
 
 
