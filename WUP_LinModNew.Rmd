@@ -34,11 +34,26 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ## Model 1 SIM~ARMS
 
 ### scatterplot
+```{r}
+plot(SIMS~ARM,data=data)
+```
+  
+  
+The scatter plot shown above looks like the points are going more towards the right of the plot. This means that there is more than likely a positive correlation. 
 
 ### Numerical results
-
-
+  
+```{r}
+cor(SIMS~ARM,data=data)
+```
+  
 ### Inferential  (Build model.1)
+  
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+  
 
 #### Predict at target point
 
