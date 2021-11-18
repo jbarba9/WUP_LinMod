@@ -60,7 +60,9 @@ The fit equation is SIMS=0.054563*ARM-4.0951560
 #### Predict at target point
   
 SIMS=0.54563*88-4.0951560
-
+```{r}
+0.54563*88-4.0951560 
+```
 #### scatterplot with model fit
   
 
