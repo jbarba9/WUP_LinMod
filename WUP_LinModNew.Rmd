@@ -130,6 +130,13 @@ cor(SIMS~ARM+GRIP, data=data)
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~GRIP + ARM,data=data)
+summary.lm(model.3)
+``` 
+  SIMS= -5.43 + GRIP * 0.02 + ARM * 0.04
+
+
 #### predict model.3 at target point
   
 
